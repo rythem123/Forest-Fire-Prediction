@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 import pickle
 import numpy as np
 app=Flask(__name__)
-ritz=pickle.load(open("ritz.pkl",'rb'))
+ritz=pickle.load(open("static/model/ritz.pkl",'rb'))
 @app.route('/')
 def hello_world():
     return render_template('front.html')
